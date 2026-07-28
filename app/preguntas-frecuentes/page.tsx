@@ -12,12 +12,12 @@ const questions = [
     a: "El requisito comenzó a aplicarse el 1 de enero de 2025 para las personas alcanzadas por el sistema que viajan desde países exentos de visa.",
   },
   {
-    q: "¿Cuánto cuesta la ETA-IL oficial?",
-    a: "El Gobierno de Israel informa un arancel oficial de 25 NIS. Los servicios privados de asistencia pueden cobrar un importe adicional, que debe distinguirse claramente del arancel gubernamental.",
+    q: "¿Cómo se informa el costo?",
+    a: "El importe total de la gestión se muestra antes de confirmar el pago. Revisá la moneda, el detalle y los posibles cargos de conversión de tu medio de pago.",
   },
   {
     q: "¿Cuánto tarda en aprobarse?",
-    a: "La autoridad informa que la respuesta puede enviarse dentro de las 72 horas posteriores a la presentación. Una revisión adicional puede requerir más gestiones.",
+    a: "La respuesta puede enviarse dentro de las 72 horas posteriores a la presentación. Una revisión adicional puede requerir más gestiones.",
   },
   {
     q: "¿Cuánto tiempo es válida?",
@@ -40,8 +40,8 @@ const questions = [
     a: "No. Autoriza a viajar y presentarse ante el control fronterizo. La decisión final de ingreso corresponde a las autoridades israelíes.",
   },
   {
-    q: "¿Puedo hacer el trámite directamente?",
-    a: "Sí. Podés solicitarla sin intermediarios en el portal oficial del Gobierno de Israel, cuyo dominio termina en gov.il. Nuestro sitio ofrece asistencia privada opcional en español.",
+    q: "¿Cómo reduzco errores en la solicitud?",
+    a: "Copiá los datos exactamente como figuran en el pasaporte, verificá fechas y números, utilizá un correo activo y revisá todas las respuestas antes de confirmar.",
   },
 ];
 
@@ -61,7 +61,7 @@ const faqJsonLd = {
 export const metadata: Metadata = {
   title: "Preguntas frecuentes sobre ETA-IL",
   description:
-    "Respuestas sobre costo, demora, vigencia, requisitos, estadía, pasaporte y trámite oficial de la autorización ETA-IL para viajar a Israel.",
+    "Respuestas sobre costo, demora, vigencia, requisitos, estadía, pasaporte y preparación de la autorización ETA-IL para viajar a Israel.",
   alternates: { canonical: "/preguntas-frecuentes" },
   openGraph: {
     title: "Preguntas frecuentes sobre la ETA-IL",
@@ -75,7 +75,7 @@ export default function PreguntasFrecuentesPage() {
   return (
     <InfoPage
       title="Preguntas frecuentes sobre ETA-IL"
-      intro="Respuestas claras sobre la autorización electrónica para viajar a Israel, sus requisitos y el uso de servicios privados de asistencia."
+      intro="Respuestas claras sobre la autorización electrónica para viajar a Israel, sus requisitos, tiempos, vigencia y revisión de datos."
     >
       <script
         type="application/ld+json"
@@ -98,13 +98,6 @@ export default function PreguntasFrecuentesPage() {
           <li><Link href="/requisitos-eta-il">Documentos y requisitos necesarios</Link></li>
           <li><Link href="/cuanto-demora-eta-il">Plazos y seguimiento de la solicitud</Link></li>
         </ul>
-      </section>
-
-      <section>
-        <h2>Portal gubernamental</h2>
-        <p>
-          Para verificar cambios normativos, elegibilidad o información oficial, consultá el <a href="https://israel-entry.piba.gov.il/" target="_blank" rel="noopener noreferrer">sitio del Gobierno de Israel</a>. Los sitios oficiales israelíes utilizan el dominio <strong>gov.il</strong>.
-        </p>
       </section>
     </InfoPage>
   );
