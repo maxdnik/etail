@@ -19,7 +19,7 @@ export default function RequisitosEtaIlPage() {
   return (
     <InfoPage
       title="Requisitos para solicitar la ETA-IL"
-      intro="Antes de completar la autorización electrónica para viajar a Israel, prepará el pasaporte y todos los datos tal como figuran en la documentación oficial."
+      intro="Antes de completar la autorización electrónica para viajar a Israel, prepará el pasaporte y todos los datos tal como figuran en tu documentación."
     >
       <section>
         <h2>1. Pasaporte vigente</h2>
@@ -56,10 +56,10 @@ export default function RequisitosEtaIlPage() {
       <section>
         <h2>4. Medio de pago</h2>
         <p>
-          El Gobierno de Israel informa un arancel oficial de 25 NIS para la ETA-IL. El importe puede cobrarse en moneda extranjera y generar conversión o cargos de la entidad emisora de la tarjeta.
+          Contá con un medio de pago habilitado para operaciones internacionales. El importe puede cobrarse en moneda extranjera y generar conversión o cargos de la entidad emisora.
         </p>
         <p>
-          Nuestro servicio privado de asistencia puede tener un costo adicional, que debe informarse de forma separada antes de confirmar el pago. También podés realizar la gestión directamente en el portal gubernamental.
+          Antes de confirmar, revisá el importe total, la moneda, los datos de facturación y las condiciones aplicables al pago.
         </p>
       </section>
 
@@ -69,7 +69,7 @@ export default function RequisitosEtaIlPage() {
           La ETA-IL está dirigida a visitantes de países exentos de visa para estadías cortas. No es la vía adecuada para trabajo, estudio, residencia ni otras actividades que requieran una visa específica.
         </p>
         <p>
-          Los ciudadanos israelíes, titulares de determinados documentos israelíes y personas con una visa israelí válida pueden estar exentos. La verificación definitiva debe hacerse con la autoridad israelí.
+          Los ciudadanos israelíes, titulares de determinados documentos israelíes y personas con una visa israelí válida pueden estar exentos. La situación debe evaluarse según la nacionalidad, el documento y el motivo del viaje.
         </p>
       </section>
 
@@ -88,9 +88,9 @@ export default function RequisitosEtaIlPage() {
       </section>
 
       <section>
-        <h2>Fuente oficial</h2>
+        <h2>Revisión final</h2>
         <p>
-          Las condiciones pueden cambiar. Verificá siempre la información más reciente en el <a href="https://israel-entry.piba.gov.il/" target="_blank" rel="noopener noreferrer">portal oficial del Gobierno de Israel</a>, identificado por el dominio <strong>gov.il</strong>.
+          Antes de completar el proceso, verificá una vez más la vigencia del pasaporte, la ortografía de los nombres, las fechas, el correo electrónico y el motivo del viaje. Estos controles reducen errores evitables.
         </p>
       </section>
     </InfoPage>
