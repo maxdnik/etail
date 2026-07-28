@@ -14,7 +14,7 @@ const faqItems = [
   {
     question: "¿Cuánto demora la respuesta?",
     answer:
-      "La autoridad israelí informa que la respuesta puede enviarse dentro de las 72 horas posteriores a la presentación. Conviene solicitarla con varios días de anticipación.",
+      "La respuesta puede enviarse dentro de las 72 horas posteriores a la presentación. Conviene solicitarla con varios días de anticipación.",
   },
   {
     question: "¿Cuánto dura la ETA-IL?",
@@ -22,9 +22,9 @@ const faqItems = [
       "Puede tener una vigencia de hasta dos años o hasta el vencimiento del pasaporte utilizado, lo que ocurra primero.",
   },
   {
-    question: "¿Este es el sitio oficial del Gobierno de Israel?",
+    question: "¿La aprobación garantiza el ingreso?",
     answer:
-      "No. Somos un servicio privado e independiente de información, asistencia y revisión en español. El sitio oficial del Gobierno de Israel utiliza un dominio terminado en gov.il.",
+      "No. La autorización permite viajar y presentarse ante el control fronterizo, pero la decisión final de admisión corresponde a las autoridades migratorias.",
   },
 ];
 
@@ -44,12 +44,12 @@ const jsonLd = {
       name: "ETA-IL Ayuda",
       url: "https://www.israel-entrypiba.com/",
       description:
-        "Servicio privado e independiente de información y asistencia en español para solicitudes ETA-IL.",
+        "Información, acompañamiento y revisión en español para solicitudes ETA-IL.",
     },
     {
       "@type": "Service",
       "@id": "https://www.israel-entrypiba.com/#service",
-      name: "Asistencia privada para solicitud ETA-IL",
+      name: "Asistencia para solicitud ETA-IL",
       serviceType: "Asistencia para autorización electrónica de viaje",
       provider: {
         "@id": "https://www.israel-entrypiba.com/#organization",
@@ -109,9 +109,6 @@ export default function Home() {
             Iniciar solicitud
           </Link>
         </div>
-        <div className="bg-amber-50 px-6 py-2 text-center text-xs leading-relaxed text-amber-950">
-          Servicio privado e independiente. No somos el sitio oficial del Gobierno de Israel ni estamos afiliados a PIBA.
-        </div>
       </header>
 
       <section className="relative isolate overflow-hidden bg-blue-950 text-white">
@@ -148,7 +145,7 @@ export default function Home() {
             <h2 className="text-xl font-bold">Información esencial</h2>
             <dl className="mt-6 space-y-5 text-sm">
               <div>
-                <dt className="font-semibold text-blue-200">Respuesta oficial</dt>
+                <dt className="font-semibold text-blue-200">Tiempo de respuesta</dt>
                 <dd className="mt-1 text-base text-white">Puede demorar hasta 72 horas</dd>
               </div>
               <div>
@@ -160,8 +157,8 @@ export default function Home() {
                 <dd className="mt-1 text-base text-white">Hasta 90 días por visita, según autorización de ingreso</dd>
               </div>
               <div>
-                <dt className="font-semibold text-blue-200">Arancel gubernamental informado</dt>
-                <dd className="mt-1 text-base text-white">25 NIS en el portal oficial</dd>
+                <dt className="font-semibold text-blue-200">Proceso</dt>
+                <dd className="mt-1 text-base text-white">Solicitud online y comunicaciones por correo</dd>
               </div>
             </dl>
           </aside>
@@ -219,7 +216,7 @@ export default function Home() {
               ["Pasaporte vigente", "Usá exactamente los datos y la ortografía que figuran en el documento con el que vas a viajar."],
               ["Correo electrónico", "Debe estar activo porque las comunicaciones y la respuesta se envían por email."],
               ["Datos del viaje", "Tené a mano fechas estimadas, motivo del viaje y datos de contacto cuando sean solicitados."],
-              ["Medio de pago", "El portal oficial informa un arancel de 25 NIS. Nuestro servicio privado puede tener un costo adicional claramente informado antes del pago."],
+              ["Medio de pago", "Utilizá un medio habilitado para operaciones internacionales y revisá el importe antes de confirmar."],
             ].map(([title, text]) => (
               <article key={title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
                 <h3 className="text-xl font-bold text-blue-950">{title}</h3>
@@ -250,28 +247,6 @@ export default function Home() {
             </li>
           ))}
         </ol>
-      </section>
-
-      <section className="border-y border-amber-200 bg-amber-50 py-12">
-        <div className="mx-auto max-w-6xl px-6">
-          <h2 className="text-2xl font-bold text-amber-950">Transparencia importante</h2>
-          <div className="mt-4 grid gap-6 text-amber-950 md:grid-cols-2">
-            <p className="leading-7">
-              Este sitio ofrece asistencia privada y no representa al Gobierno de Israel. Podés realizar el trámite directamente en el portal gubernamental oficial, cuyo dominio termina en <strong>gov.il</strong>.
-            </p>
-            <p className="leading-7">
-              El Gobierno de Israel informa un arancel oficial de 25 NIS. Cualquier importe adicional corresponde al servicio privado de asistencia y debe mostrarse antes de confirmar el pago.
-            </p>
-          </div>
-          <a
-            href="https://israel-entry.piba.gov.il/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 inline-flex font-bold text-amber-950 underline"
-          >
-            Ir al portal oficial del Gobierno de Israel
-          </a>
-        </div>
       </section>
 
       <section className="mx-auto max-w-4xl px-6 py-16 md:py-24">
@@ -320,7 +295,7 @@ export default function Home() {
           <div>
             <p className="text-lg font-extrabold text-blue-950">ETA-IL Ayuda</p>
             <p className="mt-3 max-w-2xl leading-6">
-              Servicio privado e independiente de información y asistencia en español. La aprobación de la ETA-IL y la admisión al país dependen exclusivamente de las autoridades israelíes.
+              Información y asistencia en español para preparar la solicitud. La aprobación de la ETA-IL y la admisión al país dependen de las autoridades correspondientes.
             </p>
             <p className="mt-3">© {new Date().getFullYear()} ETA-IL Ayuda. Todos los derechos reservados.</p>
           </div>
@@ -329,7 +304,7 @@ export default function Home() {
             <Link href="/requisitos-eta-il" className="hover:text-blue-900">Requisitos ETA-IL</Link>
             <Link href="/cuanto-demora-eta-il" className="hover:text-blue-900">Cuánto demora</Link>
             <Link href="/preguntas-frecuentes" className="hover:text-blue-900">Preguntas frecuentes</Link>
-            <Link href="/aviso-legal" className="hover:text-blue-900">Aviso legal y transparencia</Link>
+            <Link href="/aviso-legal" className="hover:text-blue-900">Aviso legal</Link>
           </nav>
         </div>
       </footer>
