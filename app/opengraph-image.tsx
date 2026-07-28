@@ -46,11 +46,11 @@ export default function OpenGraphImage() {
             ETA-IL para viajar a Israel
           </div>
           <div style={{ fontSize: 30, lineHeight: 1.35, color: "#dbeafe", marginTop: 28 }}>
-            Requisitos, tiempos, vigencia y asistencia privada paso a paso.
+            Requisitos, tiempos, vigencia y asistencia paso a paso.
           </div>
         </div>
         <div style={{ display: "flex", fontSize: 20, color: "#bfdbfe" }}>
-          Servicio privado e independiente · No afiliado al Gobierno de Israel
+          Información, revisión y seguimiento en español
         </div>
       </div>
     ),
