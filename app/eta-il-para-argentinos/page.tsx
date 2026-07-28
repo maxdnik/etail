@@ -27,7 +27,7 @@ export default function EtaIlParaArgentinosPage() {
           Desde el 1 de enero de 2025, las personas de países exentos de visa que viajan a Israel deben contar con una ETA-IL aprobada antes de iniciar el viaje, salvo que se encuentren dentro de una excepción o ya posean una visa israelí válida.
         </p>
         <p>
-          El requisito se determina por la nacionalidad, el tipo de pasaporte, el motivo del viaje y la situación migratoria particular. Antes de presentar la solicitud, conviene realizar la verificación de elegibilidad en el portal oficial.
+          El requisito se determina por la nacionalidad, el tipo de pasaporte, el motivo del viaje y la situación migratoria particular. Antes de presentar la solicitud, conviene revisar cuidadosamente la elegibilidad y los datos del documento.
         </p>
       </section>
 
@@ -62,7 +62,7 @@ export default function EtaIlParaArgentinosPage() {
       <section>
         <h2>Tiempo de respuesta y vigencia</h2>
         <p>
-          La autoridad israelí informa que la respuesta puede demorar hasta 72 horas. Por ese motivo, es recomendable completar el trámite varios días antes del vuelo y evitar hacerlo a último momento.
+          La respuesta puede demorar hasta 72 horas. Por ese motivo, es recomendable completar el trámite varios días antes del vuelo y evitar hacerlo a último momento.
         </p>
         <p>
           Una ETA-IL aprobada puede ser válida por hasta dos años o hasta la fecha de vencimiento del pasaporte utilizado, lo que ocurra primero. Si cambiás de pasaporte o se modifican datos esenciales, puede ser necesaria una nueva solicitud.
@@ -80,12 +80,9 @@ export default function EtaIlParaArgentinosPage() {
       </section>
 
       <section>
-        <h2>Portal oficial y asistencia privada</h2>
+        <h2>Revisión antes de comenzar</h2>
         <p>
-          El portal gubernamental oficial utiliza un dominio terminado en <strong>gov.il</strong>. Nuestro sitio es un servicio privado e independiente para quienes prefieren información, revisión y acompañamiento en español.
-        </p>
-        <p>
-          Podés consultar o realizar el trámite directamente en el <a href="https://israel-entry.piba.gov.il/" target="_blank" rel="noopener noreferrer">sitio oficial del Gobierno de Israel</a>.
+          Controlá que el pasaporte esté vigente, que los nombres y números coincidan exactamente y que el correo electrónico pueda recibir las comunicaciones del proceso. Una revisión previa reduce errores y demoras.
         </p>
       </section>
     </InfoPage>
