@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { InfoPage } from "@/components/InfoPage";
 
 export const metadata: Metadata = {
-  title: "Aviso legal y transparencia del servicio",
+  title: "Aviso legal del servicio ETA-IL",
   description:
-    "Información sobre el carácter privado e independiente de ETA-IL Ayuda, el portal oficial del Gobierno de Israel y los límites del servicio de asistencia.",
+    "Información sobre el alcance del servicio de asistencia ETA-IL, los límites de la gestión y las responsabilidades de la persona solicitante.",
   alternates: { canonical: "/aviso-legal" },
   robots: { index: true, follow: true },
 };
@@ -12,44 +12,34 @@ export const metadata: Metadata = {
 export default function AvisoLegalPage() {
   return (
     <InfoPage
-      title="Aviso legal y transparencia"
-      intro="Esta página explica con claridad qué servicio ofrecemos, qué no podemos garantizar y cómo identificar el portal oficial de la autorización ETA-IL."
+      title="Aviso legal"
+      intro="Esta página explica el alcance de la asistencia, los límites de la gestión y las responsabilidades relacionadas con una solicitud ETA-IL."
     >
       <section>
-        <h2>Servicio privado e independiente</h2>
+        <h2>Alcance del servicio</h2>
         <p>
-          ETA-IL Ayuda es un servicio privado de información, acompañamiento y revisión en español. No somos una dependencia gubernamental, no representamos al Estado de Israel y no estamos afiliados a la Population and Immigration Authority (PIBA), embajadas, consulados ni otras autoridades públicas.
+          ETA-IL Ayuda brinda información, acompañamiento, revisión de datos y seguimiento en español durante la preparación de la solicitud. El alcance concreto se informa antes de completar el proceso y puede variar según el caso.
         </p>
       </section>
 
       <section>
-        <h2>El trámite puede realizarse sin intermediarios</h2>
+        <h2>Costos y confirmación</h2>
         <p>
-          Toda persona puede verificar su elegibilidad y realizar la solicitud directamente en el portal oficial del Gobierno de Israel. Los dominios gubernamentales oficiales terminan en <strong>gov.il</strong>.
-        </p>
-        <p>
-          Acceso al <a href="https://israel-entry.piba.gov.il/" target="_blank" rel="noopener noreferrer">portal oficial de ETA-IL</a>.
-        </p>
-      </section>
-
-      <section>
-        <h2>Costos</h2>
-        <p>
-          El Gobierno de Israel informa un arancel oficial de 25 NIS para la ETA-IL. Nuestro servicio privado puede aplicar una tarifa adicional por asistencia, revisión y seguimiento. El precio correspondiente debe mostrarse antes de confirmar el pago.
+          El importe total aplicable se muestra antes de confirmar el pago. La persona solicitante debe revisar el detalle, la moneda, las condiciones y cualquier cargo asociado a su medio de pago.
         </p>
       </section>
 
       <section>
         <h2>Decisión y control migratorio</h2>
         <p>
-          No podemos garantizar la aprobación de una solicitud ni el ingreso a Israel. La evaluación de la ETA-IL y la decisión final de admisión son competencia exclusiva de las autoridades israelíes.
+          No podemos garantizar la aprobación de una solicitud ni el ingreso a Israel. La evaluación de la ETA-IL y la decisión final de admisión corresponden a las autoridades competentes.
         </p>
       </section>
 
       <section>
         <h2>Exactitud de la información</h2>
         <p>
-          Procuramos mantener el contenido actualizado, pero los requisitos, aranceles y procedimientos pueden modificarse. Cuando exista una diferencia entre este sitio y una fuente gubernamental, prevalece la información oficial y la normativa aplicable.
+          Procuramos mantener el contenido actualizado, pero los requisitos, aranceles y procedimientos pueden modificarse. La información general del sitio no reemplaza una evaluación individual de la situación migratoria de cada viajero.
         </p>
       </section>
 
@@ -57,6 +47,13 @@ export default function AvisoLegalPage() {
         <h2>Responsabilidad del solicitante</h2>
         <p>
           La persona solicitante es responsable de proporcionar información verdadera, completa y consistente con su documentación. También debe verificar las condiciones de viaje, seguridad, salud, visado y tránsito aplicables a su situación personal.
+        </p>
+      </section>
+
+      <section>
+        <h2>Uso de la información</h2>
+        <p>
+          Los contenidos del sitio tienen finalidad informativa y operativa. Las recomendaciones se basan en los datos proporcionados por la persona solicitante y en los requisitos disponibles al momento de la gestión.
         </p>
       </section>
     </InfoPage>
