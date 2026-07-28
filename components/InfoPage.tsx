@@ -36,9 +36,6 @@ export function InfoPage({ title, intro, children }: InfoPageProps) {
             Iniciar solicitud
           </Link>
         </div>
-        <div className="bg-amber-50 px-6 py-2 text-center text-xs leading-relaxed text-amber-950">
-          Servicio privado e independiente. No somos el sitio oficial del Gobierno de Israel ni estamos afiliados a PIBA.
-        </div>
       </header>
 
       <article className="mx-auto max-w-4xl px-6 py-12 md:py-16">
@@ -78,20 +75,12 @@ export function InfoPage({ title, intro, children }: InfoPageProps) {
           <div>
             <p className="font-bold text-slate-900">ETA-IL Ayuda</p>
             <p className="mt-2 max-w-xl">
-              Servicio privado de información y asistencia. La decisión de aprobación y las condiciones de ingreso dependen exclusivamente de las autoridades israelíes.
+              Información y asistencia en español para preparar solicitudes ETA-IL. La aprobación y las condiciones de ingreso dependen de las autoridades correspondientes.
             </p>
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-2 md:justify-end">
             <Link href="/aviso-legal" className="hover:text-blue-900">Aviso legal</Link>
             <Link href="/preguntas-frecuentes" className="hover:text-blue-900">Preguntas frecuentes</Link>
-            <a
-              href="https://israel-entry.piba.gov.il/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-900"
-            >
-              Sitio oficial
-            </a>
           </div>
         </div>
       </footer>
