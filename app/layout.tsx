@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 const siteUrl = "https://www.israel-entrypiba.com";
 const defaultTitle = "ETA-IL para viajar a Israel | Asistencia en español";
 const defaultDescription =
-  "Información y asistencia privada en español para preparar tu solicitud ETA-IL para viajar a Israel. Requisitos, tiempos, vigencia y revisión personalizada.";
+  "Información y asistencia en español para preparar tu solicitud ETA-IL para viajar a Israel. Requisitos, tiempos, vigencia y revisión personalizada.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
